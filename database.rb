@@ -74,10 +74,10 @@ class Database
 
     while count <= @id - 1
       if contact_exists?(count)
-        puts "   #{index+1} #{@contacts[index].first_name}" if input == 1
-        puts "   #{index+1} #{@contacts[index].last_name}" if input == 2
-        puts "   #{index+1} #{@contacts[index].email}" if input == 3
-        puts "   #{index+1} #{@contacts[index].note}\n" if input == 4
+        puts "   #{@contacts[index].first_name}" if input == 1
+        puts "   #{@contacts[index].last_name}" if input == 2
+        puts "   #{@contacts[index].email}" if input == 3
+        puts "   #{@contacts[index].note}\n" if input == 4
       end
       
       count += 1
